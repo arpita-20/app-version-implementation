@@ -29,14 +29,14 @@
       "pre-commit": "tsdx lint"
     }
   },
-  "release": {
-    "plugins": [
+  "plugins": [
+    [
       "@semantic-release/npm",
       {
         "npmPublish": false
       }
     ]
-  },
+  ],
   "prettier": {
     "printWidth": 80,
     "semi": true,
