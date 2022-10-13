@@ -30,7 +30,7 @@ jobs:
       - run: npm run build --if-present
       - run: npm test
 
-  publish:
+  release:
     runs-on: ubuntu-latest
     # if: ${{ github.ref=='refs/head/main' }}
     needs: [build]
@@ -44,5 +44,5 @@ jobs:
       - run: npm install
       - run: npm run semantic-release
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
