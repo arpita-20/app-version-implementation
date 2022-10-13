@@ -42,7 +42,7 @@ jobs:
           node-version: ${{ mat rix.node-version }}
           cache: 'npm'
       - run: npm install
-      - run: npm run build --if-present
+      - run: npm run build
       - run: npm run semantic-release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
