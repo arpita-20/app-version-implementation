@@ -71,6 +71,7 @@
     "typescript": "^4.8.4"
   },
   "dependencies": {
+    "@semantic-release/npm": "^9.0.1",
     "npm": "^8.19.2"
   },
   "repository": {
